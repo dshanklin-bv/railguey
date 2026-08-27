@@ -5,4 +5,10 @@ workers_dev = true
 
 # Secrets (set via API, never committed):
 #   MCP_AUTH_TOKEN
-#   RAILWAY_API_TOKEN
+#
+# KV holds paired Railway accounts (tokens never committed):
+#   ACCOUNTS = railguey-accounts
+
+[[kv_namespaces]]
+binding = "ACCOUNTS"
+id = "231552b750634db3b0e1f636937fc9a7"
